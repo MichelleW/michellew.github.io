@@ -55,6 +55,7 @@ const Introduction = () => {
         <div className="intro">
             <h1>Projects </h1>
             <p> Hi, I'm Michelle Wu, a Creative Technologist and UX Engineer. I specialize in creating engaging and user-friendly digital experiences. Explore my portfolio to see my work and learn more about my skills and expertise.</p>
+        
 
         </div>
     );

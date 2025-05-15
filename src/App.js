@@ -1,14 +1,9 @@
-import './App.css';
-import LandingPage from './LandingPage';
-import Introduction from './Introduction';
-import ProjectList from './ProjectList';
-
+import './App.css'; 
+import PlayfulPrecision from './playful-precision';
 function App() {
   return (
     <div className="App">
-      <LandingPage />
-      <Introduction />
-      <ProjectList />
+    <PlayfulPrecision />
     </div>
   );
 }

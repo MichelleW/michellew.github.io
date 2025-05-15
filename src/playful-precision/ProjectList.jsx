@@ -25,24 +25,7 @@ const ProjectList = () => {
         }
     ]
 
-    function displayProjectImg() {
-        projectData.map((project, idx) => {
-            console.log('{project.imgName} :>> ', `../assets/img/${project.imgName}`);
-            return <>
-                <Typography variant="caption" color="primary" sx={{ textTransform: "uppercase", letterSpacing: 1, mt: 1, display: "block" }}>
-                    {project.title}
-                </Typography>
-                <Typography className="h4" variant="h4" fontWeight="bold" sx={{ mt: 2, mb: 2, lineHeight: 1.2, color: "#1E2B3A" }}>
-                    {project.title}
-                </Typography>
-                <img
-                    src={`../assets/img/${project.imgName}`}
-                    alt={project.title}
-                    className="projectImg"
-                />
-            </>
-        })
-    }
+    
     return (
         <div className="container">
             <Container sx={{ my: 2 }}>

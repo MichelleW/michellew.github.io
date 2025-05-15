@@ -10,7 +10,7 @@ const LandingPage = () => {
             <AppBar position="absolute" color="transparent" elevation={0}>
                 <Toolbar sx={{ justifyContent: "center", px: 5 }}>
                     <Typography variant="h6" sx={{ letterSpacing: 2, textTransform: "uppercase", fontWeight: "bold", flexGrow: 1, textAlign: "center" }}>
-                        Michelle Wu - Creative Technologist / UX Engineer
+                        Michelle Wu - UX Engineer
                     </Typography>
                     <IconButton edge="end" color="inherit" size="large" sx={{ position: "absolute", right: 16, transform: "scale(1.5)" }} disableRipple>
                     <span class="material-icons-outlined">
