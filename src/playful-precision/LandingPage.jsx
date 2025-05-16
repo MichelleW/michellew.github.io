@@ -13,8 +13,8 @@ const LandingPage = () => {
                         Michelle Wu - UX Engineer
                     </Typography>
                     <IconButton edge="end" color="inherit" size="large" sx={{ position: "absolute", right: 16, transform: "scale(1.5)" }} disableRipple>
-                        <span class="material-icons-outlined">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
+                        <span className="material-icons-outlined">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
                         </span>
                     </IconButton>
                 </Toolbar>
@@ -30,7 +30,7 @@ const LandingPage = () => {
                         width: 750,
                         height: 750,
                         position: 'relative',
-                        zIndex: 1
+                        zIndex: 2
                     }}
                 />
             </Box>

@@ -1,28 +1,130 @@
 :root {
-  --font-family: "Inter", sans-serif;
+  /* Font families */
+  --font-heading: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Font weights */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* Font sizes */
+  --fs-small: 0.875rem;
+  /* 14px */
+  --fs-base: 1rem;
+  /* 16px */
+  --fs-large: 1.125rem;
+  /* 18px */
+  --fs-xl: 1.25rem;
+  /* 20px */
+  --fs-2xl: 1.5rem;
+  /* 24px */
+  --fs-3xl: 2rem;
+  /* 32px */
+
+  /* Line heights */
+  --lh-tight: 1.2;
+  --lh-normal: 1.5;
+  --lh-relaxed: 1.75;
+
+  /* Colors (preserving existing colors) */
   --color-dark-navy-blue: #1E2B3A;
   --color-muted-gray: #6B7280;
   --color-medium-gray: #4B5563;
-  --font-weight-bold: 700;
-  --font-weight-uppercase: 600;
-  --font-weight-body: 400;
-  --spacing-margin: 20px;
 }
 
-
+/* Base styles */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: var(--font-body);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-base);
+  line-height: var(--lh-normal);
+  color: var(--color-dark-navy-blue);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: --font-family;
-  color: --color-dark-navy-blue;
 }
 
+/* Typography styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-tight);
+  margin: 0 0 1rem;
+}
+
+h1 {
+  font-size: var(--fs-3xl);
+}
+
+h2 {
+  font-size: var(--fs-2xl);
+}
+
+h3 {
+  font-size: var(--fs-xl);
+}
+
+p {
+  margin: 0 0 1rem;
+  line-height: var(--lh-relaxed);
+}
+
+/* Existing App styles */
 .App {
   height: 100%;
   text-align: center;
 }
 
+/* Update existing classes to use new typography */
+.landingPage h1 {
+  font-family: var(--font-heading);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-3xl);
+  margin-bottom: 1.5rem;
+}
+
+.intro p {
+  font-family: var(--font-body);
+  font-size: var(--fs-large);
+  line-height: var(--lh-relaxed);
+  color: var(--color-medium-gray);
+}
+
+.project-title {
+  font-family: var(--font-heading);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-xl);
+  color: var(--color-dark-navy-blue);
+}
+
+.project-description {
+  font-family: var(--font-body);
+  font-size: var(--fs-base);
+  color: var(--color-medium-gray);
+  line-height: var(--lh-relaxed);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Add container styles to ensure proper positioning context */
+.project-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
