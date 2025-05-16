@@ -1,0 +1,116 @@
+.landingPage {
+  height: 100vh;
+  /* Full viewport height */
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.avatar-position {
+  top: 5%;
+  filter: grayscale(70%);
+  transition: transform 0.3s ease-in, filter 0.3s ease-in, width 0.3s ease-in, height 0.3s ease-in;
+}
+
+.avatar-position:hover {
+  filter: grayscale(0);
+  /* Remove grayscale on hover */
+  transform: scale(1.2);
+  /* Scale up the avatar */
+
+}
+
+.intro {
+  width: 100%;
+  min-height: 500px;
+  margin-top: -20px;
+  background-color: #fff;
+  padding-top: 0;
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+  background-color: white;
+}
+
+.intro p {
+  margin: 0 20%;
+}
+
+/* 
+  Font Family: "Inter", sans-serif; (modern and clean look)
+  Colors:
+  Dark navy blue (#1E2B3A) for main headings (matches screenshot)
+  Muted gray (#6B7280) for section titles (uppercase text)
+  Medium gray (#4B5563) for body text for readability
+  Font Weights:
+  700 for bold headings
+  600 for uppercase section titles
+  400 for body text
+  Spacing: Consistent margins for a structured layout */
+
+.projectList .h4 {
+  color: --color-dark-navy-blue;
+
+}
+
+.projectImg {
+  width: 500px;
+}
+
+/* Hide all unordered lists */
+ul {
+  display: none;
+}
+
+/* If you need to show specific ul elements, you can override with a class */
+.show-list {
+  display: block;
+}
+
+/* SVG fill colors */
+svg {
+  fill: #1E2B3A;
+  /* Default fill color */
+  transition: fill 0.3s ease;
+  /* Smooth transition for color changes */
+}
+
+/* You can target specific SVGs with classes */
+.svg-primary {
+  fill: #4B5563;
+}
+
+.svg-secondary {
+  fill: #6B7280;
+}
+ 
+
+/* If the SVG is inside a button or link */
+button svg,
+a svg {
+  fill: currentColor;
+  /* Inherits color from parent */
+}
+
+/* For SVGs with multiple paths that need different colors */
+.multi-color svg path {
+  fill: #1E2B3A;
+  /* Default color */
+}
+
+.multi-color svg path:nth-child(2) {
+  fill: #4B5563;
+  /* Second path color */
+}
+
+/* You can also use CSS custom properties for dynamic colors */
+.theme-svg {
+  fill: var(--svg-color, #1E2B3A);
+}

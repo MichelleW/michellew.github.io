@@ -1,0 +1,167 @@
+.carousel {
+    margin-top: -150px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 4;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: 80%;
+    max-width: 1000px;
+    height: 750px;
+    max-height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 30px;
+    padding: 2rem;
+    z-index: 6;
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes slideFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.carousel .slider {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 100%;
+    background-color: #f5f5f5;
+    position: relative;
+    animation: slideFromRight 0.8s ease-out;
+}
+
+.carousel .left {
+    width: 50%;
+    height: 100%;
+    background-color: #f5f5f5;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel .left .item {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carousel .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.carousel .right .img {
+    display: flex;
+    width: 500px;
+}
+
+.carousel .right .img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.5s ease;
+}
+
+.carousel .left .project-dec {
+    width: 300px;
+    margin: 30% auto;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.project-dec h4 {
+    color: var(--color-muted-gray);
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.nav-button:hover {
+    background: white;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.nav-button.prev {
+    left: 1rem;
+}
+
+.nav-button.next {
+    right: 1rem;
+}
+
+.dots {
+    font-size: 1rem;
+    width: 200px;
+    margin: 2rem auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+}
+
+.dots li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    fill: #c5ae2d;
+}
+
+.dots li:hover {
+    transform: scale(1.1);
+}
+
+.dots li.active svg,
+.dots li:hover svg {
+    fill: #c5ae2d;
+}
+
+.dots li svg {
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+}
