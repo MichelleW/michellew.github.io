@@ -29,3 +29,5 @@ export const carouselSlides = [
         techStack: "Google Earth Engine API, Angular, CSS-in-JS, Framer Motion"
     },
 ];
+
+export const profilepix = "../assets/profilepix/profile_cartoon3.png"

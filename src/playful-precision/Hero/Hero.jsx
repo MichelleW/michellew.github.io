@@ -1,6 +1,6 @@
 import React from 'react';
 import './Hero.css';
-
+import { profilepix } from '../utils/projectData';
 const Hero = () => {
     return (
         <div className="hero-container">
@@ -13,7 +13,7 @@ const Hero = () => {
                 </div>
                 <div className="hero-image">
                     <img
-                        src="/assets/profile_cartoon3.png"
+                        src={profilepix}
                         alt="Michelle Wu - UX Engineer"
                         className="profile-image"
                     />

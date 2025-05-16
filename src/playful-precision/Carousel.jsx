@@ -46,21 +46,21 @@ function Carousel() {
     };
 
     return (
-        <div className='carousel'>
+        <div id="projects" className='carousel'>
             <div
                 className="wrapper"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
             >
                 <button className="nav-button prev" onClick={handlePrevSlide}>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                            <path d="M15 18l-6-6 6-6" />
-                        </svg>
-                    </button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M15 18l-6-6 6-6" />
+                    </svg>
+                </button>
                 <div className="slider" key={animationKey}>
-                    
+
                     <div className="left">
-                        <div className="project-dec"> 
+                        <div className="project-dec">
                             <h2>{carouselSlides[currentSlide].title}</h2>
                             <h3> Description: </h3>
                             <p>{carouselSlides[currentSlide].description}</p>
@@ -77,13 +77,13 @@ function Carousel() {
                             />
                         </div>
                     </div>
-                    
+
                 </div>
                 <button className="nav-button next" onClick={handleNextSlide}>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                            <path d="M9 18l6-6-6-6" />
-                        </svg>
-                    </button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M9 18l6-6-6-6" />
+                    </svg>
+                </button>
                 <ul className='dots'>
                     {carouselSlides.map((_, index) => (
                         <li
