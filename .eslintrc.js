@@ -6,13 +6,7 @@ module.exports = {
         'plugin:import/typescript'
     ],
     plugins: ['@typescript-eslint', 'import'],
-    rules: {
-        '@typescript-eslint/no-unused-expressions': ['warning', {
-            allowShortCircuit: true,
-            allowTernary: true,
-            allowTaggedTemplates: true
-        }]
-    },
+    
     settings: {
         'import/resolver': {
             'node': {

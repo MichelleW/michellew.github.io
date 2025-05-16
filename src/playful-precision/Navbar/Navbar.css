@@ -1,0 +1,167 @@
+.navbar {
+    font-family: "Fira Mono", monospace;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--navbar-bg-color);
+    padding: var(--navbar-padding);
+    border: 1px solid white;
+    color: #fff;
+    background-color: #000;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.logo a,
+.logo div {
+    display: inline-block;
+    margin-right: 60px;
+    /* Optional: Add some space between the elements */
+    font-weight: 700;
+}
+
+.logo img {
+    margin: 10%;
+    border-radius: 50%;
+    width: 40px;
+    transition: transform 0.3s ease;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-right: 1rem;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    text-decoration: none;
+    color: #ffcc00;
+}
+
+
+.nav-links svg:hover {
+    color: #ffcc00;
+}
+
+.logo img:hover {
+    transform: scaleX(-1);
+}
+
+/* 
+  
+  Hero
+  
+  */
+
+.hero {
+    height: 80%;
+    min-height: 700px;
+    /* background: var(--bg-dark);   */
+}
+
+/* 
+  
+  ImageSliders
+  
+  */
+
+.slider {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s ease;
+    min-height: 100px;
+    border: 1px solid #161313;
+}
+
+.slide:nth-child(odd) {
+    background-color: #f0f0f0;
+    /* Light gray for odd slides */
+}
+
+.slide:nth-child(even) {
+    background-color: #d0d0d0;
+    /* Darker gray for even slides */
+}
+
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: var(--navbar-bg-color);
+    padding: var(--navbar-padding);
+    height: 10%;
+}
+
+/*
+  
+  bubbles
+  
+  */
+
+canvas {
+    display: block;
+    /* vertical-align: bottom; */
+}
+
+/* Particle container. */
+#particle-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
