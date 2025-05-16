@@ -7,7 +7,7 @@ const Navbar = () => {
             <div className="logo">
                 <a href="./home" target="_blank" rel="noopener noreferrer">
                     {/* <img src="https://www.svgrepo.com/show/500090/rooster.svg" alt="Logo" /></a>  */}
-                    <img src="../assets/img/profilepix3.jpg" alt="Profile" /></a>
+                    <img src="../assets/profile_cartoon.png" alt="Profile" /></a>
                 <h2>Michelle Wu 🌻🌸🍀 <span>Senior UX Engineer</span></h2>
             </div>
             <ul className="nav-links">

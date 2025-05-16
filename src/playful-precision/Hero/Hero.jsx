@@ -1,5 +1,5 @@
 import React from 'react';
-import './Hero.css'; 
+import './Hero.css';
 
 const Hero = () => {
     return (
@@ -9,10 +9,11 @@ const Hero = () => {
                     <p className="hero-blurb">
                         Hi, I'm Michelle Wu - a UX Engineer blending design precision with code craftsmanship
                     </p>
+                    <h4>Based in San Francisco, Bay Area, CA</h4>
                 </div>
                 <div className="hero-image">
                     <img
-                        src="../assets/img/profilepix3.jpg" 
+                        src="/assets/profile_cartoon3.png"
                         alt="Michelle Wu - UX Engineer"
                         className="profile-image"
                     />

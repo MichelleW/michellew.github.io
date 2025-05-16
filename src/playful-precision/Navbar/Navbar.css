@@ -4,10 +4,9 @@
     justify-content: space-between;
     align-items: center;
     background-color: var(--navbar-bg-color);
-    padding: var(--navbar-padding);
-    border: 1px solid white;
+    padding: var(--navbar-padding); 
     color: #fff;
-    background-color: #000;
+    background-color: var(--color-soft-rose);
 
 }
 

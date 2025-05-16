@@ -60,10 +60,13 @@ function Carousel() {
                 <div className="slider" key={animationKey}>
                     
                     <div className="left">
-                        <div className="project-dec">
-                            <h4>{carouselSlides[currentSlide].subtitle}</h4>
+                        <div className="project-dec"> 
                             <h2>{carouselSlides[currentSlide].title}</h2>
-                            {carouselSlides[currentSlide].description}
+                            <h3> Description: </h3>
+                            <p>{carouselSlides[currentSlide].description}</p>
+                            <h3>Deliverables:</h3>
+                            <p>{carouselSlides[currentSlide].scope}</p>
+                            <p><h5>Technolgies:</h5>{carouselSlides[currentSlide].techStack}</p>
                         </div>
                     </div>
                     <div className="right">
