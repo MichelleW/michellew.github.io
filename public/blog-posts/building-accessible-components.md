@@ -1,6 +1,6 @@
 # Building Accessible Components
 
-*February 2024*
+*November 2024*
 
 A deep dive into creating inclusive web experiences through properly implemented accessibility features and best practices.
 

@@ -9,21 +9,21 @@ const Blog = () => {
         {
             id: 'ux-engineering',
             title: 'UX Engineering Best Practices: Bridging Design and Code',
-            date: 'March 2024',
+            date: 'September 2024',
             excerpt: 'Exploring the intersection of design systems and frontend architecture.',
             url: '/blog-posts/ux-engineering-best-practices.md'
         },
         {
             id: 'accessibility',
             title: 'Building Accessible Components',
-            date: 'February 2024',
+            date: 'November 2024',
             excerpt: 'A deep dive into creating inclusive web experiences.',
             url: '/blog-posts/building-accessible-components.md'
         },
         {
             id: 'design-system',
             title: 'Design Systems in Practice: How UX Engineers Drive Consistency',
-            date: 'January 2024',
+            date: 'February 2024',
             excerpt: 'Creating scalable and maintainable design systems.',
             url: '/blog-posts/design-system-architecture.md'
         }

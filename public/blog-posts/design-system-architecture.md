@@ -1,6 +1,6 @@
 # Design Systems in Practice: How UX Engineers Drive Consistency
 
-*January 2024*
+*Feburary 2024*
 
 Design systems are more than shared Figma files—they’re **living products** that empower teams to build faster, better, and more consistently. As UX engineers, we operationalize these systems into code.
 

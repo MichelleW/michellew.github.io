@@ -23,7 +23,7 @@ export const carouselSlides = [
     },{
         title: "Immersive Camera Playground",
         subtitle: "Project 1",
-        description: "Earth API Playground is a tool that allows users to experience an additional dimension of our Earth data. The functionality is based on Earth’s imagery and there’s a strong hypothesis within Geo Developer that there’s more we can do with Earth to create truly immersive experiences for our developer audience ",
+        description: "Earth API Playground is a tool that allows users to experience an additional dimension of our Earth data. ",
         scope: "1:1 Interview” user research.",
         image: "../assets/immersiveCameraPlayground.png",
         techStack: "Google Earth Engine API, Angular, CSS-in-JS, Framer Motion"
