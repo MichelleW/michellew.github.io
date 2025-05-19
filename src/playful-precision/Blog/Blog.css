@@ -1,6 +1,6 @@
 .blog-container {
     width: 100%;
-    min-height: 85vh;
+    height: 700px;
     padding: 4rem 2rem;
     background-color: var(--color-soft-rose);
 }
