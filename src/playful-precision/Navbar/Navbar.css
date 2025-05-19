@@ -3,25 +3,31 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--navbar-bg-color);
-    padding: var(--navbar-padding); 
+    background-color: var(--color-soft-rose);
+    padding: var(--navbar-padding);
     color: #fff;
     background-color: var(--color-soft-rose);
-
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .logo {
     display: flex;
     align-items: center;
     margin-left: 1rem;
+    flex-shrink: 0;
 }
 
 .logo a,
 .logo div {
     display: inline-block;
-    margin-right: 60px;
-    /* Optional: Add some space between the elements */
+    margin-right: 2rem;
     font-weight: 700;
+    white-space: nowrap;
 }
 
 .logo img {
@@ -31,26 +37,35 @@
     transition: transform 0.3s ease;
 }
 
-.navbar {
-    position: sticky;
-    top: 0;
-}
-
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 1.5rem;
     margin-right: 1rem;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+}
+
+.nav-links::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
 }
 
 .nav-links li {
     display: inline;
+    flex-shrink: 0;
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
     font-size: 16px;
+    white-space: nowrap;
 }
 
 .nav-links a:hover {
@@ -58,13 +73,46 @@
     color: #ffcc00;
 }
 
-
 .nav-links svg:hover {
     color: #ffcc00;
 }
 
 .logo img:hover {
     transform: scaleX(-1);
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 0.75rem 1rem;
+    }
+
+    .logo a,
+    .logo div {
+        margin-right: 1rem;
+    }
+
+    .nav-links {
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding: 0.5rem;
+    }
+
+    .logo img {
+        width: 30px;
+    }
+
+    .nav-links {
+        gap: 0.75rem;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
 }
 
 /* 
@@ -111,7 +159,6 @@
     /* Darker gray for even slides */
 }
 
-
 .prev,
 .next {
     position: absolute;
@@ -137,7 +184,6 @@
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
-
 
 /* Footer */
 

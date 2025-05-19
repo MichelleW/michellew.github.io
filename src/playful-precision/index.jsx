@@ -1,18 +1,16 @@
-import Carousel from './Carousel';
-import LandingPage from './LandingPage';
-import './index.css';
+import Carousel from './Carousel'; 
 import Navbar from './Navbar/Navbar';
 import Hero from './Hero/Hero';
+import Blog from './Blog/Blog';
+import './index.css';
+
 function PlayfulPrecision() {
   return (
     <div className="playful-precision">
-      <Navbar />
-      {/* <LandingPage /> */}
-      <Hero />
-      {/* <Introduction />
-      <ProjectSlider /> */}
-      {/* <ProjectList /> */}
+      <Navbar /> 
+      <Hero /> 
       <Carousel />
+      <Blog />
     </div>
   );
 }
