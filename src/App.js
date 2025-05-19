@@ -1,9 +1,11 @@
 import PlayfulPrecision from './playful-precision';
+import { Analytics } from './components/Analytics';
 
 function App() {
   return (
     <div className="App">
-    <PlayfulPrecision />
+      <Analytics />
+      <PlayfulPrecision />
     </div>
   );
 }
