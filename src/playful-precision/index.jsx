@@ -9,10 +9,11 @@ function PlayfulPrecision() {
   return (
     <div className="playful-precision">
       <Navbar /> 
-      <Hero /> 
-      <Carousel />
+      {/* <Hero /> 
+      <Carousel /> */}
       <Blog />
       <Contact />
+    
     </div>
   );
 }

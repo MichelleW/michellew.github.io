@@ -1,10 +1,13 @@
 .contact-container {
     max-width: 600px;
+    width: 100%;
     margin: 2rem auto;
     padding: 2rem;
     background-color: #fff;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .contact-container h2 {
@@ -12,24 +15,28 @@
     margin-bottom: 2rem;
     text-align: center;
     font-family: var(--font-heading);
+    word-wrap: break-word;
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    width: 100%;
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    width: 100%;
 }
 
 .form-group label {
     color: var(--color-dark-navy-blue);
     font-weight: var(--fw-medium);
     font-size: var(--fs-base);
+    word-wrap: break-word;
 }
 
 .form-group input,
@@ -39,6 +46,9 @@
     border-radius: 6px;
     font-size: var(--fs-base);
     transition: border-color 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 100%;
 }
 
 .form-group input:focus,
@@ -50,6 +60,7 @@
 .form-group textarea {
     resize: vertical;
     min-height: 120px;
+    max-width: 100%;
 }
 
 .submit-button {
@@ -63,6 +74,9 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-top: 1rem;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .submit-button:hover {
@@ -74,6 +88,7 @@
     .contact-container {
         margin: 1rem;
         padding: 1.5rem;
+        width: calc(100% - 2rem);
     }
 }
 
@@ -81,6 +96,7 @@
     .contact-container {
         margin: 0.5rem;
         padding: 1rem;
+        width: calc(100% - 1rem);
     }
 
     .form-group input,
