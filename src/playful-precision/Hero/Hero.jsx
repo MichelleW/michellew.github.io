@@ -9,7 +9,8 @@ const Hero = () => {
                     <p className="hero-blurb">
                         Hi, I'm Michelle Wu - a UX Engineer blending design precision with code craftsmanship
                     </p>
-                    <h4>Based in San Francisco, Bay Area, CA</h4>
+                   
+                    <h3 className='location'>Based in San Francisco, Bay Area, CA</h3>
                 </div>
                 <div className="hero-image">
                     <img
