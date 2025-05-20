@@ -14,13 +14,6 @@ const Blog = () => {
             url: '/blog-posts/ux-engineering-best-practices.md'
         },
         {
-            id: 'accessibility',
-            title: 'Building Accessible Components',
-            date: 'November 2024',
-            excerpt: 'A deep dive into creating inclusive web experiences.',
-            url: '/blog-posts/building-accessible-components.md'
-        },
-        {
             id: 'design-system',
             title: 'Design Systems in Practice: How UX Engineers Drive Consistency',
             date: 'February 2024',

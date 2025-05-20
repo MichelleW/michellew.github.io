@@ -66,7 +66,7 @@ function Carousel() {
                             <p>{carouselSlides[currentSlide].description}</p>
                             {/* <h3>Deliverables:</h3>
                             <p>{carouselSlides[currentSlide].scope}</p> */}
-                            <p><h5>Technolgies:</h5>{carouselSlides[currentSlide].techStack}</p>
+                            <p><b>Technolgies:</b>{carouselSlides[currentSlide].techStack}</p>
                         </div>
                     </div>
                     <div className="right">

@@ -6,9 +6,9 @@ const Hero = () => {
         <div className="hero-container">
             <div className="hero-content">
                 <div className="hero-text">
-                    <p className="hero-blurb">
-                        Hi, I'm Michelle Wu - a UX Engineer blending design precision with code craftsmanship
-                    </p>
+                    <h2 className="hero-blurb">
+                        Hi, I'm Michelle Wu - a UX Engineer blending design precision with code craftsmanship
+                    </h2>
                    
                     <h3 className='location'>Based in San Francisco, Bay Area, CA</h3>
                 </div>

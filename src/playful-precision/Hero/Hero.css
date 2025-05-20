@@ -14,18 +14,17 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 4rem;
+    /* gap: 4rem; */
     text-align: left;
 }
 
 .hero-text {
     flex: 1;
-    padding: 2rem;
+    padding: 1.5rem;
 }
 
 .hero-blurb {
-    font-size: 2.5rem;
-    line-height: 1.4;
+    font-size: 1.8rem; 
     color: #f8f9fa;
     font-weight: 500;
     margin: 0;
@@ -63,7 +62,7 @@
     .hero-content {
         flex-direction: column-reverse;
         text-align: center;
-        gap: 2rem;
+        /* gap: 2rem; */
     }
 
     .hero-blurb {
